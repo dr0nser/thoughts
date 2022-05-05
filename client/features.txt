@@ -1,0 +1,3 @@
+Twitter Clone Version 1.0
+ - Able to tweet
+ - Log In / Sign up

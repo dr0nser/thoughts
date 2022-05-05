@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dark-container {
+    @apply bg-slate-50 dark:bg-slate-900;
+  }
+  .App {
+    @apply dark:bg-slate-900 h-screen transition-all duration-200;
+  }
+  .input {
+    @apply border border-gray-600;
+  }
+  .header {
+    @apply px-10 py-3 flex justify-between text-2xl text-gray-800 dark:text-gray-300 font-semibold bg-white dark:bg-slate-900 shadow-md transition duration-200;
+  }
+
+  /* main */
+  .main {
+    @apply pt-4 transition duration-200;
+  }
+
+  /* Home */
+  .home {
+    @apply w-2/5 m-auto bg-transparent transition duration-200;
+  }
+  .page-name {
+    @apply p-3 text-xl font-bold;
+  }
+  .tweet-form {
+    @apply p-5 w-full bg-white dark:bg-slate-700 shadow-md rounded-lg transition duration-200;
+  }
+  .input-div {
+    @apply flex align-middle space-x-2;
+  }
+  .profile-pic {
+    @apply w-12 h-12 rounded-full;
+  }
+  .tweet-input {
+    @apply w-full bg-slate-100 dark:bg-slate-800 text-gray-700 dark:text-gray-200 outline-none px-6 py-1 rounded-full transition duration-200;
+  }
+  .functions {
+    @apply mt-4 flex justify-between content-between w-full;
+  }
+  .btn-add-image {
+    @apply h-12 w-12 p-3 text-violet-500 hover:bg-slate-50 dark:hover:bg-slate-800 rounded-full transition duration-200;
+  }
+  .btn-tweet {
+    @apply bg-violet-500 hover:bg-violet-600 text-white text-lg font-semibold tracking-wide px-4 py-1 rounded-full transition duration-200;
+  }
+
+  /* post */
+  .post {
+    @apply flex bg-white dark:bg-slate-700 border-gray-200 p-3 mt-4 rounded-lg shadow-md transition duration-200;
+  }
+  .post-view {
+    @apply px-2 py-1;
+  }
+  .profile-details {
+    @apply flex space-x-1;
+  }
+  .profile-name {
+    @apply tracking-wide text-gray-900 dark:text-gray-200 font-semibold;
+  }
+  .twitter-handle {
+    @apply text-gray-400 dark:text-gray-400;
+  }
+  .dot {
+    @apply text-gray-400 dark:text-gray-400;
+  }
+  .post-date {
+    @apply text-gray-400 dark:text-gray-400;
+  }
+  .tweet-data {
+    @apply text-gray-800 dark:text-gray-300 text-clip;
+  }
+}
